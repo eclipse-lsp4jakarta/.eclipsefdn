@@ -24,4 +24,9 @@ orgs.newOrg('technology.lsp4jakarta', 'eclipse-lsp4jakarta') {
       web_commit_signoff_required: false,
     },
   ],
+} + {
+  # snippet added due to 'https://github.com/EclipseFdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
+  _repositories+:: [
+    orgs.newRepo('.github')
+  ],
 }
